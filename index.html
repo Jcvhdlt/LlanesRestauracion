@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LlanesRestauracion - Especialista en restauración y conservación de obras de arte y patrimonio histórico">
+    <title>LlanesRestauracion - Restauración de Arte</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="icon" type="image/png" href="./images/logos/favicon.png">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="logo">LlanesRestauracion</div>
+                <ul class="nav-menu">
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/llanes_restauracion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        aria-label="Instagram" target="_blank">
+                        <img src="./images/logos/logo-instagram.png" alt="icon-instagram">
+                    </a>
+                    <a href="https://wa.me/34689924767" aria-label="WhatsApp" target="_blank">
+                        <img src="./images/logos/logo-whatsapp.png" alt="icon-whatsapp">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lidia-s%C3%A1nchez-jim%C3%A9nez-5ab36b19a/"
+                        aria-label="LinkedIn" target="_blank">
+                        <img src="./images/logos/logo-linkedin.png" alt="icon-linkedin">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Drawer lateral para móvil -->
+        <aside id="mobile-drawer" class="drawer" aria-hidden="true">
+            <div class="drawer-header">
+                <div class="logo">RestaurArte</div>
+                <button class="drawer-close" aria-label="Cerrar menú">✕</button>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <a href="https://www.instagram.com/llanes_restauracion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram" target="_blank">
+                    <img src="./images/logos/logo-instagram.png" alt="icon-instagram">
+                </a>
+                <a href="https://wa.me/34689924767" aria-label="WhatsApp" target="_blank">
+                    <img src="./images/logos/logo-whatsapp.png" alt="icon-whatsapp">
+                </a>
+                <a href="https://www.linkedin.com/in/lidia-s%C3%A1nchez-jim%C3%A9nez-5ab36b19a/" aria-label="LinkedIn"
+                    target="_blank">
+                    <img src="./images/logos/logo-linkedin.png" alt="icon-linkedin">
+                </a>
+            </div>
+        </aside>
+
+        <!-- Capa para oscurecer el fondo -->
+        <div class="backdrop" hidden></div>
+    </header>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div class="hero-text" id="contacto">
+                <h1>Devolviendo la vida al arte</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat libero nobis non dolor, deleniti
+                    velit blanditiis dignissimos at est quisquam soluta eos nihil et voluptate voluptates perspiciatis,
+                    accusantium, magnam sed!</p>
+
+                <!-- Formulario de Solicitud -->
+                <div class="solicitud-form">
+                    <h3>Solicite una tasación</h3>
+                    <p>Obtenga una evaluación profesional del estado de su obra y las necesidades de restauración.
+                        Servicio gratuito y sin compromiso.</p>
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Su nombre" required>
+                        <input type="email" name="email" placeholder="Su correo electrónico" required>
+                        <textarea name="message" placeholder="Su mensaje" required></textarea>
+                        <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                    </form>
+                    <div id="form-message"></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./images/texto-restauracion.png" alt="Restauración de arte en proceso">
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section class="proyectos" id="proyectos">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto-card">
+                    <img src="./images/restauracion-escultura.jpg" alt="Escultura Clásica">
+                    <h3>Escultura Clásica</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo delectus cum, nostrum fugiat
+                        ab quisquam nobis vitae veniam tempore, asperiores accusantium perspiciatis nihil libero
+                        assumenda exercitationem animi molestias aliquid sit!.</p>
+                </article>
+                <article class="proyecto-card">
+                    <img src="./images/restauracion-tela-virgen.png" alt="Mural Al Fresco">
+                    <h3>Mural Al Fresco</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi qui officia, reprehenderit
+                        exercitationem a quo harum ipsum! Veritatis iure facere qui, expedita ipsa dolore, velit porro
+                        vero eius consequuntur dignissimos..</p>
+                </article>
+                <article class="proyecto-card">
+                    <img src="./images/restauracion-retablo.jpg" alt="Retablo Barroco">
+                    <h3>Retablo Barroco</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis ullam sequi eius? Numquam
+                        placeat veritatis laboriosam mollitia quasi, delectus, explicabo officiis ducimus voluptas
+                        dolorem iusto suscipit tempora cupiditate vero vitae.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="container servicios-content">
+            <div class="servicios-image">
+                <img src="./images/restaurando-estatua.png" alt="Herramientas de restauración">
+            </div>
+            <div class="servicios-list">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <li>
+                        <span class="icon">✓</span>
+                        <div>
+                            <h4>Restauración de Pintura</h4>
+                            <p>Limpieza de barnices, reintegración cromática, consolidación de soportes (lienzo, tabla).
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">✓</span>
+                        <div>
+                            <h4>Restauración de Escultura</h4>
+                            <p>Tratamiento de madera, piedra, metal. Limpieza, reconstrucción de volúmenes y pátinas.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">✓</span>
+                        <div>
+                            <h4>Conservación Preventiva</h4>
+                            <p>Asesoramiento sobre condiciones ambientales, embalaje y exposición de obras.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">✓</span>
+                        <div>
+                            <h4>Tasaciones e Informes</h4>
+                            <p>Elaboración de informes técnicos detallados y peritajes para seguros o ventas.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="container sobre-content">
+            <div class="perfil-image">
+                <img src="./images/imagen-perfil.jpeg" alt="Perfil del restaurador">
+            </div>
+            <div class="perfil-text">
+                <h2>Sobre Mí</h2>
+                <h3>Pasión y Precisión</h3>
+                <p>
+                    Llevo más de 7 años dedicada profesionalmente a la conservación y restauración de obras de arte.
+                    Mi trabajo abarca desde la limpieza y consolidación de soportes antiguos hasta la reintegración
+                    cromática y el tratamiento específico de patologías como craqueladuras, desprendimientos de
+                    policromía o daños producidos por agentes biológicos.
+                </p>
+                <p>
+                    En cada intervención, realizo un estudio previo exhaustivo utilizando técnicas de diagnóstico como
+                    luz ultravioleta, lupa binocular y análisis de estratigrafías para garantizar decisiones informadas
+                    y respetuosas con el original. Aplico criterios internacionales de reversibilidad y minimalismo,
+                    empleando materiales como resinas estables, adhesivos neutros y pigmentos similares a los empleados
+                    históricamente.
+                </p>
+                <p>
+                    Mi compromiso es preservar la autenticidad y la historia de cada obra, documentando todo el proceso
+                    y asesorando sobre conservación preventiva para alargar su vida útil. Trabajo tanto con colecciones
+                    particulares como en colaboración con museos e instituciones, siempre con la responsabilidad de que
+                    cada pieza conserve su esencia y pueda seguir transmitiendo su valor artístico y cultural a futuras
+                    generaciones.
+                </p>
+
+                <a href="#contacto" class="btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>LlanesRestauracion</h4>
+                <p>El futuro del legado de arte, una obra a la vez.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>sanjimenezlidia@gmail.com</p>
+                <p>+34 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 LlanesRestauracion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

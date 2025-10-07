@@ -1,0 +1,542 @@
+/* Reset y Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #a58b73;
+    --color-secondary: #8b6f5c;
+    --color-bg: #f5f0eb;
+    --color-text: #4a3f35;
+    --color-white: #ffffff;
+    --spacing: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header/Navigation */
+.header {
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    /* para mantener las proporciones */
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 0;
+    background-color: var(--color-bg);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text>p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Formulario */
+.solicitud-form {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.solicitud-form h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.solicitud-form p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.solicitud-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#form-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    display: none;
+}
+
+#form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+#form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+}
+
+/* Proyectos */
+.proyectos {
+    padding: 4rem 0;
+    background-color: var(--color-white);
+}
+
+.proyectos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 3rem;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.proyecto-card {
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.proyecto-card h3 {
+    padding: 1rem;
+    color: var(--color-secondary);
+}
+
+.proyecto-card p {
+    padding: 0 1rem 1.5rem;
+}
+
+/* Servicios */
+.servicios {
+    padding: 4rem 0;
+    background-color: var(--color-bg);
+}
+
+.servicios-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.servicios-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.servicios h2 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+.servicios-list ul {
+    list-style: none;
+}
+
+.servicios-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.servicios-list .icon {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.servicios-list h4 {
+    color: var(--color-secondary);
+    margin-bottom: 0.3rem;
+}
+
+/* Sobre Mí */
+.sobre-mi {
+    padding: 4rem 0;
+    background-color: var(--color-white);
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.perfil-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.perfil-text h2 {
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.perfil-text h3 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.perfil-text p {
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a {
+    color: var(--color-white);
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+
+    .hero-content,
+    .servicios-content,
+    .sobre-content {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Botón hamburguesa (oculto en desktop) */
+.hamburger {
+    display: none;
+    background: transparent;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: var(--color-white);
+    margin: 5px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Drawer lateral */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: min(80vw, 320px);
+    background: var(--color-white);
+    color: var(--color-text);
+    box-shadow: 2px 0 20px rgba(0, 0, 0, .15);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem;
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+.drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.drawer-close {
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.drawer-menu {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.drawer-menu li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.drawer-menu a {
+    display: block;
+    padding: 0.9rem 0.2rem;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.drawer-menu a:hover {
+    color: var(--color-secondary);
+}
+
+.drawer-footer {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.drawer-footer img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+/* Backdrop */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    z-index: 1400;
+}
+
+/* Responsive: en móvil ocultamos menú horizontal y mostramos hamburguesa */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    /* Colores del header para contraste con el botón */
+    .header {
+        position: sticky;
+        top: 0;
+    }
+}
+
+/* Animación del botón hamburguesa al abrir */
+.hamburger.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.solicitud-form input,
+.solicitud-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+    /* para agrandarlo solo verticalmente */
+    box-sizing: border-box;
+    background: #fff;
+    color: var(--color-text);
+
+}
+
+.solicitud-form textarea {
+    min-height: 80px;
+    max-height: 250px;
+}
